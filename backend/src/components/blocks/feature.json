@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_block_features",
+  "info": {
+    "displayName": "Feature",
+    "icon": "grid",
+    "description": "Single feature, stat or highlight card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "icon": {
+      "type": "string",
+      "description": "Heroicon or Lucide icon name to display in the UI"
+    },
+    "badge": {
+      "type": "string"
+    },
+    "stat": {
+      "type": "string",
+      "description": "Optional metric for KPI style cards"
+    }
+  }
+}

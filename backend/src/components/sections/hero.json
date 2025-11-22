@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_section_heroes",
+  "info": {
+    "displayName": "Hero",
+    "icon": "crown",
+    "description": "Primary hero block for headline, sub copy and CTAs"
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": {
+      "type": "string"
+    },
+    "headline": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "primaryCtaLabel": {
+      "type": "string"
+    },
+    "primaryCtaUrl": {
+      "type": "string"
+    },
+    "secondaryCtaLabel": {
+      "type": "string"
+    },
+    "secondaryCtaUrl": {
+      "type": "string"
+    },
+    "media": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images", "videos"]
+    },
+    "stats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.feature",
+      "description": "Optional KPI cards rendered under the hero copy"
+    }
+  }
+}

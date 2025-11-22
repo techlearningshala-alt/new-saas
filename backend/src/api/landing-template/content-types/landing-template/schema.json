@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "landing_templates",
+  "info": {
+    "singularName": "landing-template",
+    "pluralName": "landing-templates",
+    "displayName": "Landing template",
+    "description": "Reusable landing page scaffolds"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": ["core", "vertical", "campaign"],
+      "default": "core"
+    },
+    "description": {
+      "type": "text"
+    },
+    "defaultTheme": {
+      "type": "component",
+      "component": "theme.palette"
+    },
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "sections.hero",
+        "sections.feature-grid",
+        "sections.testimonials",
+        "sections.cta-banner"
+      ]
+    },
+    "pages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::landing-page.landing-page",
+      "mappedBy": "template"
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo"
+    }
+  }
+}

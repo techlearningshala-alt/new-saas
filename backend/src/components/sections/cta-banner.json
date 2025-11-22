@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_section_cta_banners",
+  "info": {
+    "displayName": "CTA banner",
+    "icon": "announcement",
+    "description": "Call-to-action banner with a single button"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "body": {
+      "type": "text"
+    },
+    "ctaLabel": {
+      "type": "string"
+    },
+    "ctaUrl": {
+      "type": "string"
+    },
+    "variant": {
+      "type": "enumeration",
+      "enum": ["solid", "outline", "ghost"],
+      "default": "solid"
+    }
+  }
+}

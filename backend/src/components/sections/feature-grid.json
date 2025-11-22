@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_section_feature_grids",
+  "info": {
+    "displayName": "Feature grid",
+    "icon": "apps",
+    "description": "Reusable multi-card feature grid"
+  },
+  "options": {},
+  "attributes": {
+    "layout": {
+      "type": "enumeration",
+      "enum": ["grid", "two-column", "with-icons"],
+      "default": "grid"
+    },
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.feature",
+      "min": 2,
+      "required": true
+    }
+  }
+}
