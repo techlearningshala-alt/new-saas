@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_theme_palettes",
+  "info": {
+    "displayName": "Theme palette",
+    "icon": "palette",
+    "description": "Color tokens for template theming"
+  },
+  "options": {},
+  "attributes": {
+    "primary": {
+      "type": "string",
+      "default": "#2563eb"
+    },
+    "secondary": {
+      "type": "string",
+      "default": "#0f172a"
+    },
+    "accent": {
+      "type": "string",
+      "default": "#f97316"
+    },
+    "background": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "muted": {
+      "type": "string",
+      "default": "#f1f5f9"
+    },
+    "text": {
+      "type": "string",
+      "default": "#0f172a"
+    }
+  }
+}
